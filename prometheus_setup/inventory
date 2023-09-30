@@ -1,0 +1,15 @@
+[Prometheus]
+#ansible_host=172.31.83.98 ansible_user=ubuntu
+172.31.83.98 
+
+[node_exporter] 
+#ansible_host=172.31.37.50 ansible_user=ubuntu
+172.31.37.50
+
+[grafana] 
+#ansible_host=172.31.35.79 ansible_user=ubuntu
+172.31.35.79
+
+[alertmanager] 
+#ansible_host=172.31.35.118 ansible_user=ubuntu
+172.31.35.118

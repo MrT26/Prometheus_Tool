@@ -1,0 +1,28 @@
+---
+- hosts: Prometheus
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - /home/ubuntu/prometheus_setup/role/prometheus
+
+- hosts: node_exporter
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - /home/ubuntu/prometheus_setup/role/node_exporter
+
+- hosts: alertmanager
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - /home/ubuntu/prometheus_setup/role/alertmanager
+
+- hosts: grafana
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - /home/ubuntu/prometheus_setup/role/grafana
